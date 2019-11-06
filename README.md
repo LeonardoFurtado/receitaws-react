@@ -16,7 +16,7 @@ Exemplo de resposta:
 ## Observações
 
 Ao realizar requisições para a API da receita foi necessário usar alguns plugins para habilitar cors, e ao fazer o deploy dessa aplicação identifiquei que usuários sem o plugin no nevegador não conseguiam fazer a busca. Então na requisição para a api eu utilizei o [cors anywhere](https://cors-anywhere.herokuapp.com/) para evitar que seja necessário a instalação de plugins. Por esse motivo a aplicação pode ser um pouco lenta para fazer a requisição.
-Esta observação se refere a este trecho de código:
+Neste repositório eu comentei a variavel cors e a removi do metodo `fetch()`. Caso deseje rodar a aplicação localmente e tenha problema com cors, basta habilitá-la
 ```javascript
 const cors = 'https://cors-anywhere.herokuapp.com/'
 const endpoint = 'https://www.receitaws.com.br/v1/cnpj/'
