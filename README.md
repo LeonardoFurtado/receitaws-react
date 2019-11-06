@@ -5,7 +5,7 @@ Este repositório faz parte da prova de seleção para estagiário na EBI Inform
 Clone esse repositório: `dale`
 No diretório do projeto execute: `npm install` e em seguida `npm start`
 Aguarda o processo, uma aba será aberta em seu navegador com a seguinte tela:
-![inicial](img/inicial.png)
+![inicial](img/home.png)
 
 Basta inserir um CNPJ no campo de busca e clicar em buscar.
 Exemplo de resposta:
