@@ -21,8 +21,9 @@ export default class Terceiro extends Component {
     realizarConsulta() {
         const doc = this.state.cnpj
         if (this.validarCNPJ(doc)){
-            const endpoint = 'https://cors-anywhere.herokuapp.com/https://www.receitaws.com.br/v1/cnpj/'
-            fetch(endpoint + doc)
+            const cors = 'https://cors-anywhere.herokuapp.com/'
+            const endpoint = 'https://www.receitaws.com.br/v1/cnpj/'
+            fetch(cors + endpoint + doc)
                 .then(res => res.json())
                 .then((data) => {
                     this.setState({ dados: data, loaded: true })
