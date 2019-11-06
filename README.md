@@ -2,8 +2,9 @@ Este repositório faz parte da prova de seleção para estagiário na EBI Inform
 
 ## Uso
 
-Clone esse repositório: `dale`
-No diretório do projeto execute: `npm install` e em seguida `npm start`
+- Baixe ou clone o repositório para sua máquina
+- No diretório do projeto execute: `npm install` e em seguida `npm start`
+
 Aguarda o processo, uma aba será aberta em seu navegador com a seguinte tela:
 ![inicial](img/home.png)
 
