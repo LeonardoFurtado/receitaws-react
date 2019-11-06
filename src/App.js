@@ -5,7 +5,7 @@ export default class Terceiro extends Component {
     state = {
         loaded: false,
         cnpj: "",        
-        dados: { atividades_secundarias: [], atividade_principal : []}
+        dados: { atividades_secundarias: [], atividade_principal : []}        
     }
 
     constructor(props) {
@@ -21,7 +21,7 @@ export default class Terceiro extends Component {
     realizarConsulta() {
         const doc = this.state.cnpj
         if (this.validarCNPJ(doc)){
-            const endpoint = 'https://www.receitaws.com.br/v1/cnpj/'
+            const endpoint = 'https://cors-anywhere.herokuapp.com/https://www.receitaws.com.br/v1/cnpj/'
             fetch(endpoint + doc)
                 .then(res => res.json())
                 .then((data) => {
