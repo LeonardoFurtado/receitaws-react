@@ -1,4 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositório faz parte da prova de seleção para estagiário na EBI Informática.
+
+## Uso
+
+Clone esse repositório: `dale`
+No diretório do projeto execute: `npm install` e em seguida `npm start`
+Aguarda o processo, uma aba será aberta em seu navegador com a seguinte tela:
+![inicial](img/inicial.png)
+
+Basta inserir um CNPJ no campo de busca e clicar em buscar.
+Exemplo de resposta:
+![request](img/request.png)
+
+## Observações
+
+Ao realizar requisições para a API da receita foi necessário usar alguns plugins para habilitar cors, e ao fazer o deploy dessa aplicação identifiquei que usuários sem o plugin no nevegador não conseguiam fazer a busca. Então na requisição para a api eu utilizei o [cors anywhere](https://cors-anywhere.herokuapp.com/) para evitar que seja necessário a instalação de plugins. Por esse motivo a aplicação pode ser um pouco lenta para fazer a requisição.
+Esta observação se refere a este trecho de código:
+```javascript
+const cors = 'https://cors-anywhere.herokuapp.com/'
+const endpoint = 'https://www.receitaws.com.br/v1/cnpj/'
+fetch(cors + endpoint + doc)
+```
+
+
+
+
+
+
+
+
+
 
 ## Available Scripts
 
@@ -37,32 +67,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
